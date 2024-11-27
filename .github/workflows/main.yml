@@ -20,4 +20,4 @@ jobs:
           role-to-assume: 'arn:aws:iam::992382447725:role/1_github' # 作成した IAM ロールの ARN
 
       # プライベートな S3 バケットを読み取ってみる
-      - run: aws s3 ls s3://yuutani-menber-sse-kms
+      - run: aws ec2 start-instances --instance-ids i-0949f898c39c1de40
