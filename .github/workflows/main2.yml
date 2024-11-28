@@ -2,6 +2,8 @@ name: example
 
 on:
   push:
+    branches:
+      - feature
 
 jobs:
   ec2:
