@@ -1,14 +1,10 @@
 name: example
 
 on:
-  pull_request:
-    branches: 
-      - main
-    types:
-      - closed
+  push:
 
 jobs:
-  s3ls:
+  ec2:
     runs-on: ubuntu-latest
     permissions:
       id-token: write
